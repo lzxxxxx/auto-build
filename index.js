@@ -22,6 +22,7 @@ handler.on('push', function (event) {
   });
 });
 function runCommand( cmd, args, callback ){
+  console.log('123');
     var child = spawn( cmd, args );
     var response = '';
     child.stdout.on('data', function( buffer ){ response += buffer.toString(); });
