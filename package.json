@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lzxxxxx/auto-build/issues"
   },
-  "homepage": "https://github.com/lzxxxxx/auto-build#readme"
+  "homepage": "https://github.com/lzxxxxx/auto-build#readme",
+  "dependencies": {
+    "github-webhook-handler": "^0.7.1"
+  }
 }
