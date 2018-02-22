@@ -24,7 +24,7 @@ handler.on('push', function (event) {
 function runCommand( cmd, args, callback ){
     var child = spawn( cmd, args );
     var response = '';
-    child.stdout.on('data', function( buffer ){console.log('===='); response += buffer.toString(); });
+    child.stdout.on('data', function( buffer ){response += buffer.toString(); });
     child.stdout.on('end', function(){ callback( response ) });
 }
 // 由于我们不需要监听issues，所以下面代码注释掉
