@@ -22,9 +22,7 @@ handler.on('push', function (event) {
   });
 });
 function runCommand( cmd, args, callback ){
-  console.log('1234');
     var child = spawn( cmd, args );
-    console.log('child-----',child);
     var response = '';
     child.stdout.on('data', function( buffer ){console.log('===='); response += buffer.toString(); });
     child.stdout.on('end', function(){ callback( response ) });
