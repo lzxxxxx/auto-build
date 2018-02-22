@@ -10,6 +10,7 @@ http.createServer(function (req, res) {
   })
 }).listen(6670);//这是坑，6666以前的端口都慎用吧 chrome:ERR_UNSAFE_PORT
 handler.on('error', function (err) {
+  console.log('get err',err);
   console.error('Error:', err.message)
 });
 // 监听到push事件的时候执行我们的自动化脚本
