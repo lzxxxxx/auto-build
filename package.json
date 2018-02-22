@@ -1,0 +1,19 @@
+{
+  "name": "auto-build",
+  "version": "1.0.0",
+  "description": "结合 github 的 webhook 的部署",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lzxxxxx/auto-build.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lzxxxxx/auto-build/issues"
+  },
+  "homepage": "https://github.com/lzxxxxx/auto-build#readme"
+}
